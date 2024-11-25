@@ -124,5 +124,3 @@ const middleX = bodyWidth / 2;
 const middleY = bodyHeight / 2;
 console.log(middleX, middleY);
 
-const x= 12-15;
-console.log(x);
