@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Tracker</title>
+    <link rel="stylesheet" href="LogSignIn.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="darkOrange">
+            <div class="box signin">
+                <h2>Already have an account</h2>
+                <button class="signinbtn">Sign in</button>
+            </div>
+            <div class="box signup">
+                <h2>Already have an account</h2>
+                <button class="signupbtn">Register</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-box">
+        <div class="form signinform">
+            <form>
+                <h3>Sign In</h3>
+                <input type="text" placeholder="email">
+                <input type="text" placeholder="password">
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+        <div class="form signupform">
+            <form action="" name="Formfill" onsubmit=" validation()">
+                <h3>Sign Up</h3>
+                <p id="result"></p>
+                <input type="email" name="Email" id="email-input" placeholder="Email">
+                <input type="password" name="Password" id="password-input" placeholder="Password">
+                <input type="password" name="cPassword" id="repeat-password" placeholder="Confirm Password">
+                <input type="submit" value="Sign Up"  onclick="validation(); preventReload(event);">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

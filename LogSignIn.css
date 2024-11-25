@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+    background: #BB3529;
+    transition: .5s;
+}
+
+.active{
+    background: #BB3529;
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.darkOrange{
+    position: absolute;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, .15);
+}
+
+
+.darkOrange .box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-box{
+    position: absolute;
+    background: #fff;
+    height: 550px;
+    width: 600px;
+    margin-top: 6%;
+    margin-left: 11%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0 5px 45px rgba(0, 0, 0, .25) ;
+    transition: ease-in-out .5s;
+    overflow: hidden;
+}
+
+.form-box.active{
+    left: 39%;
+}
+
+.box h2{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.darkOrange .box button{
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.form-box .form{
+    position: absolute;
+    width: 80%;
+    transition: .5s;
+    padding: 50px;
+}
+
+.form-box .signinform{
+    transition-delay: .25s;
+}
+
+.form-box.active .signinform{
+    left: -100%;
+    transition-delay:0;
+}
+
+.form-box .signupform{
+    left: 100%;
+    transition-delay:0;
+}
+
+.form-box.active .signupform{
+    left: 0%;
+    transition-delay: .25s;
+}
+
+.form-box .form form{
+    display: flex;
+    width: 100% ;
+    flex-direction: column;
+}
+
+.form-box form input{
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.form-box form h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.form form input[type="submit"]{
+    border: none;
+    background: #BB3529;
+    max-width: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form form input[value="Sign Up"]{
+    border: none;
+    background: #BB3529;
+    max-width: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#result{
+    color: red;
+    font-weight: 600;
+    position: relative;
+    /*top: 25px;*/
+}
